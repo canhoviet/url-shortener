@@ -14,5 +14,6 @@ exports.get = async function get(request, h) {
         return h.redirect(result);
     } catch (e) {
         logger.error(e);
+        return Boom.badImplementation();
     }
 };

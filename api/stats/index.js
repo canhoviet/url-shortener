@@ -1,3 +1,4 @@
+const Boom = require('@hapi/boom');
 const { urlStats } = require('./stats.svc');
 const logger = require('../../utils/logger');
 
@@ -14,5 +15,6 @@ exports.stats = async function stats(request, h) {
         };
     } catch (e) {
         logger.error(e);
+        return Boom.badImplementation();
     }
 };
