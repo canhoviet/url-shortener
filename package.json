@@ -1,0 +1,36 @@
+{
+    "name": "url-shortener",
+    "version": "1.0.0",
+    "description": "url shortener service",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "jest"
+    },
+    "keywords": [
+        "email",
+        "mailgun",
+        "sendgrid"
+    ],
+    "author": "Can Ho",
+    "license": "ISC",
+    "dependencies": {
+        "@hapi/boom": "^8.0.1",
+        "@hapi/glue": "^6.2.0",
+        "@hapi/hapi": "^18.4.0",
+        "@hapi/joi": "^16.1.8",
+        "aws-sdk": "^2.594.0",
+        "bunyan": "^1.8.12",
+        "dotenv": "^8.2.0",
+        "moment": "^2.24.0",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.5"
+    },
+    "devDependencies": {
+        "blipp": "^4.0.1",
+        "husky": "^3.1.0",
+        "jest": "^24.9.0",
+        "lint-staged": "^9.5.0",
+        "prettier": "^1.19.1"
+    }
+}
