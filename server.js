@@ -3,6 +3,7 @@
 const Glue = require('@hapi/glue');
 const manifest = require('./config/manifest');
 const logger = require('./utils/logger');
+const { createTableIfNotExist } = require('./utils/');
 
 const env = process.env.NODE_ENV || 'development';
 const isProduction = env == 'production';
@@ -19,6 +20,8 @@ exports.startServer = async function startServer() {
         logger.info(
             `✅ Server is listening on  ${server.info.uri.toLowerCase()}, environment "${env}"`
         );
+        await createTableIfNotExist();
+
         return server;
     } catch (err) {
         logger.error(err);
