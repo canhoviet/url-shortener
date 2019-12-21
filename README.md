@@ -28,6 +28,8 @@ When starting, the code will check if table is created. If not it will create a 
 
 #### Improvements
 
+• Caching hot URLs in memory or in memcached. Or even better with CDN. The is especially important as most of the traffic is `read` (read heavy system)
+
 • Wait until the newly created become `ACTIVE`
 
 • Health check
