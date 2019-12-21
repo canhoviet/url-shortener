@@ -22,13 +22,13 @@ Before running, please rename `env.sample` to `.env` and input data for all prop
 
 • `npm start` to start the service
 
-• `npm test` to run the tests
-
 When starting, the code will check if table is created. If not it will create a new table. New dynamodb table takes some minutes to become `ACTIVE`. Please wait until it's active. Otherwise, it won't work
 
 #### Improvements
 
 • Caching hot URLs in memory or in memcached. Or even better with CDN. The is especially important as most of the traffic is `read` (read heavy system)
+
+• Adding unit tests / integration tests
 
 • Wait until the newly created become `ACTIVE`
 
