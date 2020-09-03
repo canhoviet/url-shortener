@@ -17,7 +17,7 @@
     "dependencies": {
         "@hapi/boom": "^8.0.1",
         "@hapi/glue": "^6.2.0",
-        "@hapi/hapi": "^18.4.0",
+        "@hapi/hapi": "^19.1.1",
         "@hapi/joi": "^16.1.8",
         "aws-sdk": "^2.594.0",
         "bunyan": "^1.8.12",
